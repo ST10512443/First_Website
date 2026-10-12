@@ -3,16 +3,6 @@ h1{
     font-size: 24px;
 }
 
-div{
-  margin: 50px;
-  padding: 50px;
-  border: 5px solid black}
-
-  .box{
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-  }
-
   .body{
     overflow:scroll;
   }
@@ -20,3 +10,48 @@ div{
   .main_img{
     opacity: 0.5;
   }
+
+.MovingBox {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+.Animate {
+  animation: MoveBox 2s infinite alternate;
+}
+
+@keyframes MoveBox {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    header {
+        background-color: red;
+    }
+
+    #wrapper {
+        width: 360px;
+    }
+
+    header{
+        height: 375px;
+    }
+
+    header img{
+      left:125px;
+    }
+
+    #topLinks li{
+        display: block;
+        padding-bottom:10px;
+        padding-top:10px;
+    }
+
+}
